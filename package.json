@@ -20,7 +20,8 @@
   "keywords": [],
   "author": "",
   "engines": {
-    "node": "6.2.1"},
+    "node": "6.2.1",
+    "npm": "3.9.5"},
   "license": "ISC",
   "dependencies": {
     "@angular/common": "2.0.0-rc.3",
