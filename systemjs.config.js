@@ -10,7 +10,11 @@
 
     '@angular':                   'node_modules/@angular',
     'angular2-in-memory-web-api': 'node_modules/angular2-in-memory-web-api',
-    'rxjs':                       'node_modules/rxjs'
+    'rxjs':                       'node_modules/rxjs',
+    '@angular2-material':         'node_modules/@angular2-material', 
+    'angular2-spotify':           'node_modules/angular2-spotify',
+    'ng2-bootstrap':              'node_modules/ng2-bootstrap', 
+
   };
 
   // packages tells the System loader how to load when no filename and/or no extension
@@ -18,6 +22,9 @@
     'app':                        { main: 'main.js',  defaultExtension: 'js' },
     'rxjs':                       { defaultExtension: 'js' },
     'angular2-in-memory-web-api': { main: 'index.js', defaultExtension: 'js' },
+    'angular2-spotify':           { fomat: 'register', defaultExtension: 'js' },
+     'ng2-bootstrap':             {defaultExtension: 'js' },      
+
   };
 
   var ngPackageNames = [
@@ -31,7 +38,31 @@
     'router',
     'router-deprecated',
     'upgrade',
+    'button',
+
   ];
+
+  var materialPkgs = [
+  'core',
+  'button',
+  'card',
+  'sidenav',
+  'index',
+  'icon',
+  'toolbar',
+  'input',
+  'list'
+  ];
+
+
+  materialPkgs.forEach((pkg) => {
+  packages[`@angular2-material/${pkg}`] = {main: `${pkg}.js`};
+  });
+
+
+
+
+  
 
   // Individual files (~300 requests):
   function packIndex(pkgName) {

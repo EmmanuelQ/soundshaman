@@ -1,0 +1,30 @@
+
+
+<button md-icon-button id="profilebutton" >
+
+	<md-icon (click)="toggleProfileMenu()" svgSrc="app/assets/profile.svg"></md-icon>
+</button>
+
+
+
+
+
+	<form>
+
+	
+
+
+	    <div class="btn-group" keyboardNav="true" dropdown [(isOpen)]="dropdown.isopen">
+
+
+
+	      <md-list class="dropdown-menu" dropdownMenu role="menu" id="accountdropdown">
+	        <a md-list-item href="#" *ngFor="let option of options">{{option}} </a>
+	        
+	      </md-list>
+
+
+	    </div>
+
+    </form>
+	

@@ -1,0 +1,25 @@
+#profilebutton{
+	right: 10;
+	position: fixed;
+	top: 14;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+}
+
+md-icon{
+
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+
+}
+
+
+
+#accountdropdown{
+	position: fixed;
+	left: 1358;
+	top: 61;
+	width: 80px;
+}	

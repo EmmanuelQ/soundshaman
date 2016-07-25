@@ -1,0 +1,72 @@
+.spotifyimage{
+	width: 32px;
+	height: 32px;
+	border-radius: 50%; 
+	transition-duration: 0.4s;
+	position: absolute;
+	top: 16;
+	left: 950;	
+}
+
+.soundcloudimage{
+	width: 46px;
+	height: 48px;
+	position: absolute;
+	top: 9;
+	left: 998;
+}
+
+
+.spotifyimage:hover{
+	background-color: lime ;
+}
+
+#toolbar{
+	position: relative;
+}
+
+#searchbar{
+	position: relative;
+	width: 450px;
+	height: 32px;
+	left: 450px;
+	top: 16px;
+	
+		
+}
+
+#resultbar{
+	position: absolute;
+	width: 450px;
+	left: 450px;
+	top: 48px;
+
+
+}
+
+
+
+
+.first{
+	background-color: #4D4B51 !important;
+}
+
+.second{
+
+}
+
+.third{
+
+}
+
+.demo-layout-transparent {
+  background: url('https://getmdl.io/assets/demos/transparent.jpg') center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+
+

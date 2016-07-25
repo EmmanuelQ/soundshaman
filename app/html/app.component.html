@@ -1,0 +1,27 @@
+<md-toolbar id="toolbar" class="first">
+
+
+
+	<form>
+
+	    <div class="btn-group" keyboardNav="true" dropdown [(isOpen)]="status.isopen">
+
+	      <input type="text" class="form-control" id="searchbar">
+
+	      <md-list class="dropdown-menu" id="resultbar" dropdownMenu role="menu">
+	        <a md-list-item href="#" *ngFor="let item of test">{{item}} </a>     
+	      </md-list>
+
+
+	    </div>
+	
+
+	</form>
+
+</md-toolbar>
+
+
+<my-account></my-account>
+
+<vinyl-panel></vinyl-panel>
+
